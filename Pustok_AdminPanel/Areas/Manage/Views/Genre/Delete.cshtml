@@ -1,0 +1,30 @@
+﻿
+@model Genre
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card" style="width: 18rem;">
+              
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                  
+
+                    <form method="post" asp-action="delete">
+
+                        <a href="#" class="btn btn-primary">Go to Back</a>
+                        <button type="submit" href="#" class="btn btn-danger">Delete</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

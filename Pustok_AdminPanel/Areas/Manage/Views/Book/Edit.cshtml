@@ -1,0 +1,93 @@
+﻿@model Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form asp-action="create" method="post">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Name</label>
+                    <input asp-for="Name" type="text" class="form-control">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Example select</label>
+                            <select asp-for="AuthorId" class="form-control" id="exampleFormControlSelect1">
+                                @foreach (Author item in ViewBag.Authors)
+                                {
+                                    <option value="@item.Id">@item.FullName</option>
+                                }
+                            </select>
+                            <span class="text-danger" asp-validation-for="AuthorId"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label asp-for="CostPrice" class="form-label">CostPrice</label>
+                        <input asp-for="CostPrice" type="text" class="form-control">
+                        <span class="text-danger" asp-validation-for="CostPrice"></span>
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <label asp-for="SalePrice" class="form-label">SalePrice</label>
+                        <input asp-for="SalePrice" type="text" class="form-control">
+                        <span class="text-danger" asp-validation-for="SalePrice"></span>
+
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <label asp-for="DiscountPercent" class="form-label">DiscountPercent</label>
+                        <input asp-for="DiscountPercent" type="text" class="form-control">
+                        <span class="text-danger" asp-validation-for="DiscountPercent"></span>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label asp-for="PageSize" class="form-label">PageSize</label>
+                        <input asp-for="PageSize" type="text" class="form-control">
+                        <span class="text-danger" asp-validation-for="PageSize"></span>
+
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <label asp-for="Rate" class="form-label">Rate</label>
+                        <input asp-for="Rate" type="text" class="form-control">
+                        <span class="text-danger" asp-validation-for="Rate"></span>
+
+                    </div>
+                    <div class="mb-3 col-md-4 d-flex align-items-center">
+                        <div class="custom-control custom-checkbox small">
+                            <input asp-for="IsAvailable" type="checkbox" class="custom-control-input">
+                            <label asp-for="IsAvailable" class="custom-control-label">
+                                IsAvaliable
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="SubDesc" class="form-label">SubDesc</label>
+                    <input asp-for="SubDesc" type="text" class="form-control">
+                    <span class="text-danger" asp-validation-for="SubDesc"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Desc" class="form-label">Desc</label>
+                    <textarea asp-for="SubDesc" type="text" class="form-control"></textarea>
+                    <span class="text-danger" asp-validation-for="Desc"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
