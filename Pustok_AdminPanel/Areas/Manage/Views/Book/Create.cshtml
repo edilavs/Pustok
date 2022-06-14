@@ -21,10 +21,10 @@
                             <label asp-for="AuthorId">Authors</label>
                             <select asp-for="AuthorId" class="form-control" asp-items="new SelectList((List<Author>)ViewBag.Authors,nameof(Author.Id),nameof(Author.FullName))">
                                 @*@foreach (Author item in ViewBag.Authors)
-                                    {
-                                    <option value="@item.Id">@item.FullName</option>
+                        {
+                        <option value="@item.Id">@item.FullName</option>
 
-                                    }*@
+                        }*@
                             </select>
                             <span class="text-danger" asp-validation-for="AuthorId"></span>
                         </div>
@@ -34,10 +34,10 @@
                             <label asp-for="GenreId">Genres</label>
                             <select asp-for="GenreId" class="form-control" asp-items="new SelectList((List<Genre>)ViewBag.Genres,nameof(Genre.Id),nameof(Genre.Name))">
                                 @*@foreach (Genre item in ViewBag.Genres)
-                                    {
-                                    <option value="@item.Id">@item.Name</option>
+                        {
+                        <option value="@item.Id">@item.Name</option>
 
-                                    }*@
+                        }*@
                             </select>
                             <span class="text-danger" asp-validation-for="GenreId"></span>
                         </div>
@@ -102,6 +102,11 @@
                     <label asp-for="PosterFile" class="form-label">PosterFile</label>
                     <input asp-for="PosterFile" class="form-control">
                     <span class="text-danger" asp-validation-for="PosterFile"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="HoverPosterFile" class="form-label">HoverPosterFile</label>
+                    <input asp-for="HoverPosterFile" class="form-control">
+                    <span class="text-danger" asp-validation-for="HoverPosterFile"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="ImageFiles" class="form-label">ImageFiles</label>

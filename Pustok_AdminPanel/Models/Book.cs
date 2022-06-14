@@ -30,6 +30,9 @@ namespace Pustok.Models
         public Genre Genre { get; set; }
         public Author Author { get; set; }
         public List<BookImage> BookImages { get; set; } = new List<BookImage>();
+
+        [NotMapped]
+        public IFormFile HoverPosterFile { get; set; }
         [NotMapped]
         public IFormFile PosterFile { get; set; }
         [NotMapped]

@@ -1,13 +1,13 @@
 ﻿@model Book
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Create";
 }
 
 <div class="container">
     <div class="row">
         <div class="col-md-10 mx-auto">
-            <form asp-action="create" method="post">
+            <form asp-action="edit" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label asp-for="Name" class="form-label">Name</label>
                     <input asp-for="Name" type="text" class="form-control">
@@ -18,14 +18,28 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select asp-for="AuthorId" class="form-control" id="exampleFormControlSelect1">
-                                @foreach (Author item in ViewBag.Authors)
-                                {
-                                    <option value="@item.Id">@item.FullName</option>
-                                }
+                            <label asp-for="AuthorId">Authors</label>
+                            <select asp-for="AuthorId" class="form-control" asp-items="new SelectList((List<Author>)ViewBag.Authors,nameof(Author.Id),nameof(Author.FullName))">
+                                @*@foreach (Author item in ViewBag.Authors)
+                        {
+                        <option value="@item.Id">@item.FullName</option>
+
+                        }*@
                             </select>
                             <span class="text-danger" asp-validation-for="AuthorId"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="GenreId">Genres</label>
+                            <select asp-for="GenreId" class="form-control" asp-items="new SelectList((List<Genre>)ViewBag.Genres,nameof(Genre.Id),nameof(Genre.Name))">
+                                @*@foreach (Genre item in ViewBag.Genres)
+                        {
+                        <option value="@item.Id">@item.Name</option>
+
+                        }*@
+                            </select>
+                            <span class="text-danger" asp-validation-for="GenreId"></span>
                         </div>
                     </div>
                 </div>
@@ -85,8 +99,40 @@
                     <span class="text-danger" asp-validation-for="Desc"></span>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="PosterFile" class="form-label">PosterFile</label>
+                            <input asp-for="PosterFile" class="form-control">
+                            <span class="text-danger" asp-validation-for="PosterFile"></span>
+                            <img width="200" src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==true).Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="HoverPosterFile" class="form-label">HoverPosterFile</label>
+                            <input asp-for="HoverPosterFile" class="form-control">
+                            <span class="text-danger" asp-validation-for="HoverPosterFile"></span>
+                            <img width="200" src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==false).Name" />
+                        </div>
+                    </div>
+                </div>
+
+
+                        <div class="mb-3">
+                            <label asp-for="ImageFiles" class="form-label">ImageFiles</label>
+                            <input asp-for="ImageFiles" class="form-control">
+                            <span class="text-danger" asp-validation-for="ImageFiles"></span>
+                        </div>
+                        @foreach (var img in Model.BookImages.Where(x => x.PosterStatus == null))
+                        {
+                            <img width="200" src="~/upload/books/@img.Name" />
+
+                        }
+
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
         </div>
     </div>
 </div>
