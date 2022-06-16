@@ -20,11 +20,6 @@
                         <div class="form-group">
                             <label asp-for="AuthorId">Authors</label>
                             <select asp-for="AuthorId" class="form-control" asp-items="new SelectList((List<Author>)ViewBag.Authors,nameof(Author.Id),nameof(Author.FullName))">
-                                @*@foreach (Author item in ViewBag.Authors)
-                        {
-                        <option value="@item.Id">@item.FullName</option>
-
-                        }*@
                             </select>
                             <span class="text-danger" asp-validation-for="AuthorId"></span>
                         </div>
@@ -34,12 +29,20 @@
                             <label asp-for="GenreId">Genres</label>
                             <select asp-for="GenreId" class="form-control" asp-items="new SelectList((List<Genre>)ViewBag.Genres,nameof(Genre.Id),nameof(Genre.Name))">
                                 @*@foreach (Genre item in ViewBag.Genres)
-                        {
-                        <option value="@item.Id">@item.Name</option>
+                    {
+                    <option value="@item.Id">@item.Name</option>
 
-                        }*@
+                    }*@
                             </select>
                             <span class="text-danger" asp-validation-for="GenreId"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="TagIds">Tag</label>
+                            <select asp-for="TagIds" class="form-control" asp-items="new SelectList((List<Tag>)ViewBag.Tags,nameof(Tag.Id),nameof(Tag.Name))">
+                            </select>
+                            <span class="text-danger" asp-validation-for="TagIds"></span>
                         </div>
                     </div>
                 </div>
@@ -105,7 +108,7 @@
                             <label asp-for="PosterFile" class="form-label">PosterFile</label>
                             <input asp-for="PosterFile" class="form-control">
                             <span class="text-danger" asp-validation-for="PosterFile"></span>
-                            <img width="200" src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==true).Name" />
+                            <img width="200" src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==true)?.Name" />
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -113,7 +116,7 @@
                             <label asp-for="HoverPosterFile" class="form-label">HoverPosterFile</label>
                             <input asp-for="HoverPosterFile" class="form-control">
                             <span class="text-danger" asp-validation-for="HoverPosterFile"></span>
-                            <img width="200" src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==false).Name" />
+                            <img src="~/upload/books/@Model.BookImages.FirstOrDefault(x=>x.PosterStatus==false)?.Name" width="200" />
                         </div>
                     </div>
                 </div>
@@ -127,6 +130,7 @@
                         @foreach (var img in Model.BookImages.Where(x => x.PosterStatus == null))
                         {
                             <img width="200" src="~/upload/books/@img.Name" />
+                            @*<input type="hidden" value="@img.Id" name="ImageIds"/>*@
 
                         }
 

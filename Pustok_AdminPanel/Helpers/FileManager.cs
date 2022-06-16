@@ -36,7 +36,7 @@ namespace Pustok.Helpers
         }
         public static void DeleteAll(string root, string folder,List<string> fileNames)
         {
-            foreach (var fn in fileNames)
+            foreach (var filename in fileNames)
             {
                 string path = Path.Combine(root, folder, filename);
                 if (File.Exists(path))

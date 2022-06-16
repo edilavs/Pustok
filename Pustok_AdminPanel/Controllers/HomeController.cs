@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Pustok.DAL;
 using Pustok.Models;
 using Pustok.ViewModels;
@@ -24,7 +25,16 @@ namespace Pustok.Controllers
             HomeViewModel homeVM = new HomeViewModel
             {
                 Sliders = sliders,
-                Features = features
+                Features = features,
+                DiscountedBooks = _context.Books
+                                .Include(x => x.BookImages).Include(x => x.Author)
+                                .Where(x => x.DiscountPercent > 0).Take(20).ToList(),
+                FeaturedBooks = _context.Books
+                                .Include(x => x.BookImages).Include(x => x.Author)
+                                .Where(x => x.IsFeatured).Take(20).ToList(),
+                NewBooks = _context.Books
+                                .Include(x => x.BookImages).Include(x => x.Author)
+                                .Where(x => x.IsNew).Take(20).ToList()
             };
             return View(homeVM);
 

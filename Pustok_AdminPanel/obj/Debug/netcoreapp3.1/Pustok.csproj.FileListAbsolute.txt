@@ -642,6 +642,13 @@ C:\Users\LEGION\Desktop\6.ASP_CRUD\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pus
 C:\Users\LEGION\Desktop\6.ASP_CRUD\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.dll
 C:\Users\LEGION\Desktop\6.ASP_CRUD\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.pdb
 C:\Users\LEGION\Desktop\6.ASP_CRUD\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.genruntimeconfig.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.AssemblyInfoInputs.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.AssemblyInfo.cs
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.csproj.CoreCompileInputs.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.RazorAssemblyInfo.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.RazorAssemblyInfo.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\Pustok.exe
@@ -764,14 +771,6 @@ C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.csproj.AssemblyReference.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.AssemblyInfoInputs.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.AssemblyInfo.cs
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.csproj.CoreCompileInputs.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.RazorAssemblyInfo.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.RazorAssemblyInfo.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\staticwebassets\Pustok.StaticWebAssets.Manifest.cache
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\staticwebassets\Pustok.StaticWebAssets.xml
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\scopedcss\bundle\Pustok.styles.css
@@ -788,6 +787,8 @@ C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\DashBoard\Error.cshtml.g.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\DashBoard\Index.cshtml.g.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Create.cshtml.g.cs
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Delete.cshtml.g.cs
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Edit.cshtml.g.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Index.cshtml.g.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Create.cshtml.g.cs
@@ -806,5 +807,5 @@ C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.dll
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.pdb
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.genruntimeconfig.cache
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Edit.cshtml.g.cs
-C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Genre\Delete.cshtml.g.cs
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.csproj.AssemblyReference.cache
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_BookTabSliderPartial.cshtml.g.cs
