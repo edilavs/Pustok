@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "98R8NM2JKWuaIUOvnlcLUCs2l8C4zlXfFYHeJnkPJxbaADJEIHDasFgdpJO26rw26EBLFCgkPV1lb/NA2+5aTQ==",
+  "dgSpecHash": "KG2EGcIvwjVfRPrR3EbZ7+PY2ygHgNQKnYoHyvlB9EeafmAdeR494+DCo3wr0K7eO922nJAg85/zaguqm2Bpmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\99470\\Desktop\\ASP-PustokSite\\Pustok_AdminPanel\\Pustok.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.25\\microsoft.aspnetcore.cryptography.internal.3.1.25.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.25\\microsoft.aspnetcore.cryptography.keyderivation.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.25\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -32,6 +35,8 @@
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.25\\microsoft.extensions.configuration.binder.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.25\\microsoft.extensions.dependencyinjection.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.25\\microsoft.extensions.dependencyinjection.abstractions.3.1.25.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.25\\microsoft.extensions.identity.core.3.1.25.nupkg.sha512",
+    "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.25\\microsoft.extensions.identity.stores.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.logging\\3.1.25\\microsoft.extensions.logging.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.25\\microsoft.extensions.logging.abstractions.3.1.25.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.extensions.options\\3.1.25\\microsoft.extensions.options.3.1.25.nupkg.sha512",

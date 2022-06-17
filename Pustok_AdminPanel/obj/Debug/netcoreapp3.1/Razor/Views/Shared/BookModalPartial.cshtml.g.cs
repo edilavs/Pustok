@@ -14,13 +14,27 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\Views\_ViewImports.cshtml"
+using Pustok.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\Views\_ViewImports.cshtml"
 using Pustok.Models;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\Views\_ViewImports.cshtml"
+using Pustok.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de9087c2524f16400358c75af5c365272e9db02e", @"/Views/Shared/BookModalPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f85afdc02053de3e3b25edc06418c744ad6a527", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8a8109e974c018dc83074964af3500260aae020d", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_BookModalPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Book>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("poster-img"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -55,7 +69,7 @@ using Pustok.Models;
     <div class=""row"">
         <div class=""col-lg-5"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "de9087c2524f16400358c75af5c365272e9db02e3595", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "de9087c2524f16400358c75af5c365272e9db02e3969", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
