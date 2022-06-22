@@ -817,3 +817,4 @@ C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Pustok.csproj.AssemblyReference.cache
 C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Account\Login.cshtml.g.cs
+C:\Users\99470\Desktop\ASP-PustokSite\Pustok_AdminPanel\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs

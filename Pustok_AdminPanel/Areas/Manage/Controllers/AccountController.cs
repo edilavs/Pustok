@@ -13,10 +13,12 @@ namespace Pustok.Areas.Manage.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(UserManager<AppUser> userManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
            _userManager = userManager;
+           _signInManager = signInManager;
         }
         //public async Task<IActionResult> CreateAdmin()
         //{
@@ -39,9 +41,44 @@ namespace Pustok.Areas.Manage.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login(AdminLoginViewModel admin)
+        public async Task<IActionResult> Login(AdminLoginViewModel admin)
         {
-            return Ok(admin);
+
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            AppUser user = await _userManager.FindByNameAsync(admin.UserName);
+
+            if (user ==null)
+            {
+                ModelState.AddModelError("", "Username or Password is not correct"); 
+                return View();
+            }
+            var result = await _signInManager.PasswordSignInAsync(user, admin.Password, false, false);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Username or Password is not correct");
+                return View();
+            }
+            return RedirectToAction("index", "dashboard");
+        }
+        public async Task<IActionResult> GetUser()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+                return Content(user.FullName);
+            }
+            else return Content("Login");
+        }
+
+        public async Task<IActionResult> SignOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("login", "account");
         }
     }
 }
